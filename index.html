@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피 추천 시스템</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 45px;
+        }
+        .box {
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            padding-top: 80px;
+            margin-left: 0px;
+            margin-bottom: -50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .button {
+            width: 400px;
+            height: 100px;
+            line-height: 100px;
+            margin: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 36px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            white-space: nowrap; /* 텍스트가 한 줄에 잘리지 않도록 설정 */
+        }
+        .button:hover {
+            background-color: #fff;
+            color: #3498db;
+            border-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>냉장고 속 재료를 활용한 레시피 추천 시스템</h1>
+        <div class="box">
+            <a href="add_ingredient.html" class="button">재료 추가</a>
+            <a href="recipe_history.html" class="button">레시피 히스토리</a>
+        </div>
+        <div class="box">
+            <a href="community.html" class="button">커뮤니티</a>
+            <a href="personal_info.html" class="button">내 정보 입력</a>
+        </div>
+    </div>
+</body>
+</html>
