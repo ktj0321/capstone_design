@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +12,26 @@
             padding: 0;
             background-color: #f0f0f0;
         }
+
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 0px;
             text-align: center;
         }
+
         h1 {
             font-size: 45px;
             color: #333;
             margin-bottom: 30px;
         }
+
         .input-box {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         input[type="text"] {
             width: 60%;
             padding: 10px;
@@ -35,6 +40,7 @@
             border-radius: 5px;
             font-size: 16px;
         }
+
         .submit-button {
             display: inline-block;
             width: 100px;
@@ -46,27 +52,25 @@
             color: #fff;
             text-decoration: none;
             transition: all 0.3s ease;
+            cursor: pointer;
         }
+
         .submit-button:hover {
             background-color: #fff;
             color: #3498db;
             border-color: #3498db;
         }
     </style>
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            window.location.href = "recommended_recipe.html";
-        }
-    </script>
 </head>
+
 <body>
     <div class="container">
         <h1>재료를 입력해주세요!</h1>
-        <form class="input-box" onsubmit="handleSubmit(event)">
-            <input type="text" placeholder="재료를 입력하세요" required>
+        <form class="input-box" action="/recommended_recipe" method="get">
+            <input type="text" name="ingredient" placeholder="재료를 입력하세요" required>
             <button type="submit" class="submit-button">제출</button>
         </form>
     </div>
 </body>
+
 </html>
