@@ -21,11 +21,11 @@
 ![capstone_design_03](https://github.com/user-attachments/assets/b3d921e0-61d2-4f5a-a23c-109b1bb994d4)
 
 ## Requirements
-Python 3.5
-- Flask (1.1.2)
-- numpy (1.16.3)
-- pandas (0.24.2)
-- scikit-learn (0.21.0)
+Python 3.5 이상
+- Flask
+- numpy
+- pandas
+- scikit-learn
 
 ## How to use
 이 프로젝트는 Flask를 사용하여 로컬 웹 서버를 실행하며, 사용자는 웹 인터페이스를 통해 재료를 입력하고 추천된 레시피를 확인할 수 있습니다.
